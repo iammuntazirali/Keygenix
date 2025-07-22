@@ -88,17 +88,37 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 📝 File Structure
 
+```
 Keygenix/
-├── assets/
-│   ├── css/
-│   │   └── style.css
-│   ├── js/
-│   │   └── main.js
-│   └── images/
-│       └── (for any images/screenshots)
-├── index.html
-└── README.md
+│
+├── assets/                  # Static assets
+│   │
+│   ├── css/                 # Stylesheets
+│   │   └── style.css        # Main stylesheet
+│   │
+│   ├── js/                  # JavaScript files
+│   │   └── main.js          # Main JavaScript functionality
+│   │
+│   └── images/              # Image assets (screenshots, icons, etc.)
+│       └── (add files here)
+│
+├── index.html              # Main HTML file
+└── README.md               # Project documentation
+```
 
+### File Descriptions:
+
+- `index.html` - The main HTML file containing the application structure
+- `assets/css/style.css` - Contains all the styling rules for the application
+- `assets/js/main.js` - Contains all the JavaScript functionality
+- `assets/images/` - Directory for storing image assets
+- `README.md` - Project documentation and setup guide
+
+### Key Files:
+
+- `index.html` - Entry point of the application
+- `assets/css/style.css` - Responsive design and theming
+- `assets/js/main.js` - Password generation and UI interactions
 
 ## 👨‍💻 Author
 
