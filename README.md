@@ -82,10 +82,6 @@ Contributions are what make the open-source community such an amazing place to l
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📄 License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
 ## 📝 File Structure
 
 ```
@@ -132,5 +128,10 @@ Keygenix/
 
 ---
 
+## 📄 License
+This project is open source and free to use.
 
-- All the amazing developers who contribute to open source!
+## 🐞 Issues & Feedback
+If you find a bug or want to suggest a feature, please open an issue or contact me on my socials!
+
+Enjoy using Keygenix!
