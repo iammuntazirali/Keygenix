@@ -2,6 +2,8 @@
 
 Keygenix is a modern, responsive, and user-friendly password generator that helps you create strong and secure passwords with ease. Built with HTML, CSS, and JavaScript, it offers a clean interface with dark mode support and responsive design for all devices.
 
+---
+
 ## ✨ Features
 
 - 🔒 Generate strong, secure passwords instantly
@@ -12,6 +14,8 @@ Keygenix is a modern, responsive, and user-friendly password generator that help
 - 📊 Visual password strength indicator
 - 🌍 Social media links for easy access
 - 🎨 Modern and intuitive user interface
+
+---
 
 ## 🚀 Getting Started
 
@@ -30,12 +34,16 @@ Keygenix is a modern, responsive, and user-friendly password generator that help
    ```
 3. Open `index.html` in your preferred web browser
 
+---
+
 ## 🎯 Usage
 
 1. Adjust the slider to set your desired password length (8-16 characters)
 2. Click the "Generate" button to create a new password
 3. Click the "Copy" button to copy the password to your clipboard
 4. Toggle between dark and light mode using the sun/moon icon in the top-right corner
+
+---
 
 ## 📱 Mobile Support
 
@@ -45,6 +53,8 @@ Keygenix is fully responsive and works seamlessly on:
 - Desktop browsers
 - Landscape and portrait orientations
 
+---
+
 ## 🛠️ Technologies Used
 
 - HTML5
@@ -52,6 +62,8 @@ Keygenix is fully responsive and works seamlessly on:
 - JavaScript (Vanilla JS)
 - [Font Awesome](https://fontawesome.com/) - For icons
 - [Google Fonts](https://fonts.google.com/) - Poppins font family
+
+---
 
 ## 🌟 Features in Detail
 
@@ -72,6 +84,8 @@ Keygenix is fully responsive and works seamlessly on:
 - Horizontal layout for tablets and desktops
 - Vertical layout for mobile devices
 
+---
+
 ## 🤝 Contributing
 
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -81,6 +95,8 @@ Contributions are what make the open-source community such an amazing place to l
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
+
+---
 
 ## 📝 File Structure
 
@@ -115,6 +131,8 @@ Keygenix/
 - `index.html` - Entry point of the application
 - `assets/css/style.css` - Responsive design and theming
 - `assets/js/main.js` - Password generation and UI interactions
+
+---
 
 ## 🙋‍♂️ Author & Credits
 
