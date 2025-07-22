@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/*Animated Gradient Background */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4158d0 0%, #c850c0 35%, #ff6e7f 65%, #ffe29f 100%);
+  background-size: 400% 400%;
+  position: relative;
+  overflow-x: hidden;
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Subtle soft light overlay for depth */
+
+h1 {
+  color: white;
+  margin-bottom: 18px;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-shadow: 0 2px 8px rgba(65,88,208,0.2);
+  animation: fadeIn 1.2s;
+}
+
+.container {
+  width: 400px;
+  max-width: 95vw;
+  padding: 40px 30px;
+  background: rgba(255,255,255,0.18);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px 0 rgba(31,38,135,0.25);
+  backdrop-filter: blur(8px);
+  border: 1.5px solid rgba(255,255,255,0.25);
+  animation: fadeIn 1.4s;
+}
+
+.inputContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.inputContainer input {
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  padding: 0 38px 0 18px;
+  border: 1.5px solid #4158d0;
+  border-radius: 12px;
+  outline: none;
+  background: rgba(255,255,255,0.7);
+  transition: box-shadow 0.2s, border 0.2s;
+}
+.inputContainer input:focus {
+  box-shadow: 0 0 0 2px #c850c0aa;
+  border: 1.5px solid #c850c0;
+}
+
+.rangeContainer {
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.rangeContainer input {
+  width: 90%;
+  accent-color: #4158d0;
+  cursor: pointer;
+}
+.rangeContainer span {
+  font-weight: 600;
+  color: #4158d0;
+  font-size: 18px;
+}
+
+.generateBtn {
+  font-size: 22px;
+  width: 100%;
+  height: 50px;
+  color: white;
+  background: linear-gradient(90deg, #4158d0 0%, #c850c0 100%);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 16px 0 rgba(65,88,208,0.12);
+  transition: transform 0.15s, box-shadow 0.2s, background 0.2s;
+}
+.generateBtn:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 8px 24px 0 rgba(200,80,192,0.18);
+  background: linear-gradient(90deg, #c850c0 0%, #4158d0 100%);
+}
+.generateBtn:active {
+  transform: scale(0.97);
+}
+
+/* --- Enhanced Dark Mode Toggle Button (Top Right) --- */
+.darkModeToggle {
+  position: fixed;
+  top: 28px;
+  right: 32px;
+  z-index: 30;
+  background: rgba(255,255,255,0.18);
+  border: 2.5px solid rgba(255,255,255,0.35);
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 18px 0 rgba(65,88,208,0.13);
+  cursor: pointer;
+  transition: background 0.25s, box-shadow 0.25s, border 0.25s, transform 0.15s;
+  outline: none;
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
+/* Copy button next to password input */
+.copyBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: linear-gradient(90deg, #4158d0 0%, #c850c0 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0 16px;
+  height: 38px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 2px 8px 0 rgba(65,88,208,0.10);
+  transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
+  outline: none;
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.copyBtn:hover {
+  background: linear-gradient(90deg, #c850c0 0%, #4158d0 100%);
+  box-shadow: 0 4px 16px 0 rgba(200,80,192,0.18);
+  transform: translateY(-50%) scale(1.06);
+}
+
+/* Password strength meter */
+.strengthMeter {
+  margin: 18px 0 8px 0;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.strengthBar {
+  height: 8px;
+  width: 80px;
+  border-radius: 6px;
+  background: #eee;
+  transition: background 0.3s, width 0.3s;
+}
+
+#toast {
+  position: fixed;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 120px;
+  background: rgba(65,88,208,0.95);
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 100;
+  transition: opacity 0.4s, bottom 0.4s;
+}
+#toast.show {
+  opacity: 1;
+  bottom: 56px;
+  pointer-events: auto;
+}
+
+
+/* Dark mode styles */
+body.dark {
+  background: linear-gradient(135deg, #232526 0%, #414345 40%, #2c5364 100%);
+}
+body.dark::before {
+  background: radial-gradient(ellipse at 60% 20%, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.01) 60%, transparent 100%);
+}
+body.dark .container {
+  background: rgba(30,32,38,0.85);
+  border: 1.5px solid rgba(255,255,255,0.08);
+  box-shadow: 0 8px 32px 0 rgba(20,20,30,0.25);
+}
+body.dark h1 {
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(30,32,38,0.18);
+}
+.darkModeToggle .toggle-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+} 
+.toggle-svg {
+  width: 26px;
+  height: 26px;
+  transition: transform 0.5s cubic-bezier(.68,-0.55,.27,1.55), filter 0.4s;
+  filter: drop-shadow(0 2px 6px rgba(255,214,0,0.12));
+}
+
+
+/* --- Custom Sidebar  --- */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 100%;
+  padding: 290px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 10px 0;
+  font-weight: bold;
+  transition: color 0.3s;
+  font-size: 2.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar a:hover {
+  color: #070707;
+}
+
+.sidebar .fa-x-twitter {
+  font-size: 1.5rem !important;
+  line-height: 1;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .sidebar {
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 12px 20px;
+    flex-direction: row;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .sidebar a {
+    margin: 0 12px;
+    font-size: 1.8rem;
+  }
+  
+  /* Adjust container to prevent overlap with bottom sidebar */
+  .container {
+    margin-bottom: 80px;
+  }
+}
+
+/* Adjust for very small screens */
+@media (max-width: 360px) {
+  .sidebar a {
+    margin: 0 8px;
+    font-size: 1.6rem;
+  }
+}
+
+/* Landscape mode adjustments */
+@media (max-height: 500px) and (orientation: landscape) {
+  .sidebar {
+    padding: 8px 15px;
+  }
+  
+  .sidebar a {
+    margin: 0 10px;
+    font-size: 1.4rem;
+  }
+  
+  .container {
+    margin-bottom: 70px;
+  }
+}
