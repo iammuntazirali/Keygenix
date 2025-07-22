@@ -129,9 +129,15 @@ Keygenix/
 ---
 
 ## 📄 License
+
 This project is open source and free to use.
 
+---
+
 ## 🐞 Issues & Feedback
+
 If you find a bug or want to suggest a feature, please open an issue or contact me on my socials!
+
+---
 
 Enjoy using Keygenix!
