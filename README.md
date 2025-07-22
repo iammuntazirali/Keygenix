@@ -120,14 +120,17 @@ Keygenix/
 - `assets/css/style.css` - Responsive design and theming
 - `assets/js/main.js` - Password generation and UI interactions
 
-## 👨‍💻 Author
+## 🙋‍♂️ Author & Credits
 
-- **Muntazir Ali**
-  - GitHub: [@iammuntazirali](https://github.com/iammuntazirali)
-  - YouTube: [Muntazir-Ali](https://www.youtube.com/@Muntazir-Ali)
-  - Instagram: [@iammuntazirali](https://www.instagram.com/iammuntazirali)
-  - Twitter: [@iammuntazirali](https://twitter.com/iammuntazirali)
-  - LinkedIn: [Muntazir Ali](https://www.linkedin.com/in/iammuntazirali)
+- **Created by:** [Muntazir Ali](https://github.com/iammuntazirali)
+- **Socials:**  
+  - [GitHub](https://github.com/iammuntazirali)
+  - [YouTube](https://www.youtube.com/@Muntazir-Ali)
+  - [Instagram](https://www.instagram.com/iammuntazirali)
+  - [X (Twitter)](https://x.com/iammuntazirali)
+  - [LinkedIn](https://www.linkedin.com/in/iammuntazirali)
+
+---
 
 
 - All the amazing developers who contribute to open source!
