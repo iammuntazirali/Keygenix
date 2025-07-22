@@ -140,4 +140,4 @@ If you find a bug or want to suggest a feature, please open an issue or contact 
 
 ---
 
-Enjoy using Keygenix!
+**Enjoy using Keygenix!**
